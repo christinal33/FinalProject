@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="get_to_know_me_app2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-hn-GzY">
+                                <rect key="frame" x="140" y="134" width="134" height="29"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="~welcome~">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-BoldItalicMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="hiPurpleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KG-3o-bbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO3-GB-CSU">
+                                <rect key="frame" x="170" y="173" width="74" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="~~~">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="emojiPurpleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufl-ZY-D5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70Z-1j-owd">
+                                <rect key="frame" x="130" y="375" width="154" height="29"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="[click for a fact!]">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-ItalicMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="alertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj1-WI-VMj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-ud-eAI">
+                                <rect key="frame" x="100" y="414" width="214" height="29"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="[click for another fact!]">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-ItalicMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="alertButtonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhz-FH-QRZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-xd-NmA">
+                                <rect key="frame" x="110" y="218" width="194" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="☀︎">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="33" name=".HiraKakuInterface-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="get-to-know-me-pic" translatesAutoresizingMaskIntoConstraints="NO" id="X22-Qx-pqI">
+                                <rect key="frame" x="125" y="473" width="164" height="151"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1Q-Hn-Nqm">
+                                <rect key="frame" x="130" y="1249" width="154" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="christina lee">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="17" name="Arial-BoldItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKe-hR-m78">
+                                <rect key="frame" x="151.5" y="728" width="111" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="[christina lee]">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Arial-BoldItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76268614301964688" green="0.6605131937105807" blue="0.47541707667121885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Zr-xd-NmA" secondAttribute="trailing" constant="110" id="7MH-YJ-Tc6"/>
+                            <constraint firstItem="X22-Qx-pqI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="Brh-Pg-avc"/>
+                            <constraint firstItem="n1Q-Hn-Nqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="ECy-IZ-JEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X22-Qx-pqI" secondAttribute="trailing" constant="125" id="GFE-xw-aga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vO3-GB-CSU" secondAttribute="trailing" constant="170" id="HT6-QP-klP"/>
+                            <constraint firstItem="eJm-ud-eAI" firstAttribute="top" secondItem="70Z-1j-owd" secondAttribute="bottom" constant="10" id="NjD-4e-mgB"/>
+                            <constraint firstItem="vO3-GB-CSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Op6-UK-AUA"/>
+                            <constraint firstItem="XKe-hR-m78" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pki-wN-KDd"/>
+                            <constraint firstItem="eJm-ud-eAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TXy-rc-k9E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="70Z-1j-owd" secondAttribute="trailing" constant="130" id="Wac-Hw-etD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eJm-ud-eAI" secondAttribute="trailing" constant="100" id="Yiv-TN-jJK"/>
+                            <constraint firstItem="9Zr-xd-NmA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZgG-Kg-iTS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n1Q-Hn-Nqm" secondAttribute="trailing" constant="130" id="b13-EV-zBf"/>
+                            <constraint firstItem="n1Q-Hn-Nqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzd-L1-5QV"/>
+                            <constraint firstItem="w9j-hn-GzY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="cfc-11-NRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XKe-hR-m78" secondAttribute="bottom" constant="115" id="cv5-wq-MEa"/>
+                            <constraint firstItem="70Z-1j-owd" firstAttribute="top" secondItem="9Zr-xd-NmA" secondAttribute="bottom" constant="120" id="e7T-vV-Bv4"/>
+                            <constraint firstItem="vO3-GB-CSU" firstAttribute="top" secondItem="w9j-hn-GzY" secondAttribute="bottom" constant="10" id="gAM-2S-fLJ"/>
+                            <constraint firstItem="70Z-1j-owd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="iAx-7R-opT"/>
+                            <constraint firstItem="w9j-hn-GzY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kEA-LK-ul3"/>
+                            <constraint firstItem="XKe-hR-m78" firstAttribute="top" secondItem="X22-Qx-pqI" secondAttribute="bottom" constant="100" id="mkr-9E-u56"/>
+                            <constraint firstItem="eJm-ud-eAI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="nEA-F2-5zy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w9j-hn-GzY" secondAttribute="trailing" constant="140" id="oP8-0S-fDx"/>
+                            <constraint firstItem="w9j-hn-GzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="rGa-dk-tYo"/>
+                            <constraint firstItem="X22-Qx-pqI" firstAttribute="top" secondItem="eJm-ud-eAI" secondAttribute="bottom" constant="30" id="s0K-5z-CE8"/>
+                            <constraint firstItem="9Zr-xd-NmA" firstAttribute="top" secondItem="vO3-GB-CSU" secondAttribute="bottom" constant="15" id="sxv-w6-OxF"/>
+                            <constraint firstItem="9Zr-xd-NmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="upb-Zj-Y1h"/>
+                            <constraint firstItem="vO3-GB-CSU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="uuw-5m-Lxw"/>
+                            <constraint firstItem="70Z-1j-owd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHm-x7-CeI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="purpleLabel" destination="9Zr-xd-NmA" id="ldq-f4-75E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="115.17857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="get-to-know-me-pic" width="736" height="736"/>
+    </resources>
+</document>
